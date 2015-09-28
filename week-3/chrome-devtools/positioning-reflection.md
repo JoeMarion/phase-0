@@ -3,7 +3,7 @@
 ![Alt text](imgs/Row.png "Row")
 ![Alt text](imgs/Equidistance.png "Equidistant")
 ![Alt text](imgs/Square.png "Squares")
-![Alt text](ims/Footer.png "Footer")
+![Alt text](imgs/Footer.png "Footer")
 ![Alt text](imgs/Header.png "Header")
 ![Alt text](imgs/Sidebar.png "Sidebar")
 ![Alt text](imgs/get_creative.png "Get Creative")
