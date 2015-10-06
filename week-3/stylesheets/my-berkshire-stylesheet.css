@@ -1,0 +1,101 @@
+html {
+    background-color: #ffffff;
+}
+
+body {
+    color: #000080;
+}
+
+a {
+    color:#800080;
+}
+
+a:visited {
+    color:#ff0000;
+}
+
+div {
+    padding-bottom:1em;
+    margin-bottom: 1em;
+    border-bottom:solid 1px grey;
+}
+
+ul {
+    display:inline-block;
+}
+
+li {
+    display:inline-block;
+    padding:.5em;
+}
+
+.clear {
+    clear:both;
+}
+
+.left {
+    width:45%;
+    margin:0 0 0 5%;
+    padding:0;
+    float:left;
+}
+
+.right {
+    width:45%;
+    margin:0 0 0 5%;
+    padding:0;
+    float:left;
+}
+
+.sub {
+    font-size: .5em;
+    list-style-type: none;
+    padding:0;
+}
+
+.header {
+    text-align:center;
+}
+
+.large {
+    font-weight: bold;
+    font-size: 2em;
+}
+
+.small {
+    font-size: 1em;
+    font-weight: bold;
+ }
+
+.header p{
+    font-weight: bold;
+    font-size: .9em;
+    margin:0;
+}
+
+.call {
+    text-align:center;
+}
+
+/*
+What is important to know when linking an external file (like a stylesheet) to an HTML file?
+
+You need to know how to properly link the CSS file with the HTML file, and what directory the CSS file is located in.
+
+What tricks did you use to help you with positioning? How hard was it to get the site as you wanted it?
+
+We used Chrome's Devtools to help with our positioning. It made designing the site much easier than when we started just changing our CSS file and comparing.
+
+What CSS did you use to modify the element style (like size, color, etc.)
+
+We used CSS like color, background-color, font-size, fon-weight to change our formatting. We did a lot of this in the Chrome tools which made it easy.
+
+Did you modify the HTML to include classes or ids? If so, which did you chose and why? If you didn't, how would you know which one to add to your HTML?
+
+We did use a lot of classes because they were easy to target elements we wanted to change within CSS that wasn't in order in HTML. Other than those we used inheretence to select specific tags.
+
+When you compared your site to the actual code base, which do you think had cleaner code that followed best practices and why?
+
+Their code was cleaner due to some of the work arounds we troubleshooted. We had problems getting the horizontal line below the <ul> because it thought that div was empty. The horizontal line would be much higher up and go through the <ul>
+
+*/

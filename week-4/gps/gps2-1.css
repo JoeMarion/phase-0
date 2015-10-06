@@ -1,0 +1,54 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    display: table;
+}
+
+header {
+    width: 100%;
+    font-family: helvetica;
+    text-align: center;
+}
+
+h2 {
+    color: pink;
+}
+
+.column-1  h2 {
+    color: green;
+}
+
+a:hover {
+    color: orange;
+}
+
+a:active {
+    color: black;
+    background-color: orange;
+}
+
+.column-1 {
+    background-color: red;
+    float: left;
+    display: inline-block;
+    width: 50%;
+    height: 100%;
+}
+
+.column-2 {
+    background-color: blue;
+    float: right;
+    display: inline-block;
+    width: 50%;
+    height: 100%;
+}
+
+footer {
+    background-color: slategrey;
+    padding: 1.5em;
+    height: auto;
+    width: 100%;
+
+}
