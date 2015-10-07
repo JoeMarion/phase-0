@@ -2,7 +2,7 @@
 
 ##What does `puts` do?
 
-`puts` (print string) will print out the output to the console with a new line, but it returns the value of nil. It is similar to the commands: `p` and `print`. Whereas `p` will return the value of the code and print to the console, and `print` is near identicle to `puts` except without the new line.
+`puts` (put string) will print out the output to the console with a new line, but it returns the value of nil. It is similar to the commands: `p` and `print`. Whereas `p` will return the value of the code and print to the console, and `print` is near identicle to `puts` except without the new line.
 
 ##What is an integer? What is a float?
 
