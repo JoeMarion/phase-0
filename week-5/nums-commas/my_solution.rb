@@ -17,83 +17,73 @@ The output is the input with commas added
 # What are the steps needed to solve the problem?
 Create a method that takes an integer
 Store the length of the int
-Create an array that stores every third digit
-Add the arrays with comma
+if the integer is less than 1000 just return it as a string
+create a new variable with the number split into an array
+reverse the array
+create a loop to inspert a common at the third spot in every array index
+reverse the array back then join and return
 
 =end
 
 # 1. Initial Solution
 
-# def seperate_comma(number)
-#   number_length = number.to_s.length.to_i
-#   if number_length <=3
-#     return number
-#   else
-#     number_a = number.to_s.split('')
-#     rev_answer = number_a.reverse
-#     answer = Array.new
-#     i = 0
-#     while i <= number_length
-#       if (i % 3 == 0) && (i != 0)
-#         answer << (rev_answer[i] + ",")
-#       else
-#         answer << rev_answer[i]
-#       end
-#       i += 1
-#     end
-#   end
-
-
-# end
-
-# p seperate_comma(1000)
-
-# def seperate_comma(number)
-#   number_a = number.to_s.split('')
-#   number_length = number_a.size
-
-#   if number_length <= 3
-#     return number
-
-#   elsif number_length % 3 == 0
-#     comma = -4
-#     (number_length.to_i-1).times do |i|
-#       number_a.insert(comma, ',')
-#       comma -= 1
-#     end
-#     puts number_a.join("")
-#   else
-#     comma = -4
-#     number_length.to_i.times do |i|
-#       number_a.insert(comma, ",")
-#       comma -= 1
-#     end
-#     p number_a.join("")
-#   end
-# end
-
-# seperate_comma(100000000)
-
-def seperate_comma(number)
-  number_a = number.to_s.split('')
-    number_length = number_a.size
-    if number_a.size < 4
-      p number.to_s
-    elsif number_a.size % 3 == 0
-      n = -4
-      (number_length.to_i-1) / 3 .times do |i|
-        number_a.insert(n, ',')
-        n -= 4
-      end
-      p number_a.join("")
-    else
-        n = -4
-      (number_length / 3).to_i.times do |i|
-        number_a.insert(n, ',')
-        n -= 4
-      end
-    p number_a.join("")
+def separate_comma(number)
+  number_length = number.to_s.length.to_i
+  if number < 1000
+    return number.to_s
+  else
+    number_a = number.to_s.split('')
+    number_a.reverse!
+    i = 3
+    while i <= number_length
+      number_a.insert(i, ',')
+      i += 4
+    end
+    number_a.reverse!
+    number_a = number_a.join
+    return number_a
   end
 end
 
-seperate_comma(100000000000)
+# 2. Refactored Solution
+
+def separate_comma(number)
+  number_length = number.to_s.length.to_i
+  if number < 1000
+    return number.to_s
+  else
+    number_a = number.to_s.split('')
+    number_a.reverse!
+    i = 3
+    while i <= number_length
+      number_a.insert(i, ',')
+      i += 4
+    end
+    number_a.reverse!
+    number_a = number_a.join
+    return number_a
+  end
+end
+
+
+
+# 3. Reflection
+
+=begin
+What was your process for breaking the problem down? What different approaches did you consider?
+
+
+
+Was your pseudocode effective in helping you build a successful initial solution?
+
+
+What Ruby method(s) did you use when refactoring your solution? What difficulties did you have implementing it/them? Did it/they significantly change the way your code works? If so, how?
+
+
+How did you initially iterate through the data structure?
+
+
+Do you feel your refactored solution is more readable than your initial solution? Why?
+
+
+=end
