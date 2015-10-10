@@ -62,6 +62,7 @@ def pad!(array, min_size, value = nil) #destructive
     array.fill(value, array.length...min_size)
 end
 
+<<<<<<< HEAD:week-5/pad-array/my_solution.rb
 # 4. Reflection
 =begin
 
@@ -90,3 +91,7 @@ What is the difference between destructive and non-destructive methods in your o
 
 
 =end
+=======
+
+# 4. Reflection
+>>>>>>> master:week-5/my_solution.rb
