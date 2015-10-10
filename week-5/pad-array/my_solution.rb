@@ -92,6 +92,3 @@ What is the difference between destructive and non-destructive methods in your o
 
 =end
 =======
-
-# 4. Reflection
->>>>>>> master:week-5/my_solution.rb
