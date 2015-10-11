@@ -62,7 +62,6 @@ def pad!(array, min_size, value = nil) #destructive
     array.fill(value, array.length...min_size)
 end
 
-<<<<<<< HEAD:week-5/pad-array/my_solution.rb
 # 4. Reflection
 =begin
 
@@ -72,23 +71,23 @@ Yes, using our pseudocode breaking the problem down into smaller steps was not d
 
 Once you had written your pseudocode, were you able to easily translate it into code? What difficulties and successes did you have?
 
-Our biggest difficulty
+Our biggest difficulty was differentiating between the destructive and the non-destructive methods. We didn't have problems translating our pseudocode, but at first what we thought was the non-destructive ended up being destructive. That made us research why and what was different.
 
 Was your initial solution successful at passing the tests? If so, why do you think that is? If not, what were the errors you encountered and what did you do to resolve them?
 
-
+Our initial solution was successful in the destructive test when we were testing to see if the non-destructive one worked. This caused us to go back and do more research.
 
 When you refactored, did you find any existing methods in Ruby to clean up your code?
 
-
+We found a way to make our destructive method one line. This may not have made it as readable, but our goal was to make the shortest line of code for this solution.
 
 How readable is your solution? Did you and your pair choose descriptive variable names?
 
-
+We chose descriptive variable names. Our non-destructive is definitely much more readable than our destructive, but we set a goal to see how short we can make one of them.
 
 What is the difference between destructive and non-destructive methods in your own words?
 
-
+Destructive methods permanently change the code they are called on, when non-destructive uses the code from which they are called on without changing.
 
 =end
 =======
