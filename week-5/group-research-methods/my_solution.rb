@@ -1,6 +1,6 @@
 # Research Methods
 
-# I spent [] hours on this challenge.
+# I spent [1] hours on this challenge.
 
 i_want_pets = ["I", "want", 3, "pets", "but", "only", "have", 2]
 my_family_pets_ages = {"Evi" => 6, "Ditto" => 3, "Hoobie" => 3, "George" => 12, "Bogart" => 4, "Poly" => 4, "Annabelle" => 0}
@@ -90,14 +90,14 @@ def my_hash_splitting_method(source, age)
 end
 
 # Identify and describe the Ruby method(s) you implemented.
-#
+# I used the enumerator .sort_by to sort both the hash and the array.
 #
 #
 
 
 # Release 1: Identify and describe the Ruby method you implemented. Teach your
 # accountability group how to use the methods.
-#
+# I used the .sort_by enumerator. It takes a block of code (For this case it the array was {|value| value.to_s} where value was the enumerator and had it sorted by just the value of each array as a string.
 #
 #
 
@@ -105,6 +105,6 @@ end
 # Release 3: Reflect!
 # What did you learn about researching and explaining your research to others?
 #
-#
+# It was similar to working within pairs. Explaining to groups is different because the explanation has to be a little more broad to help more than one person understand it.
 #
 #
