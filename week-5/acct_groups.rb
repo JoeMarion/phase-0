@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # Pseudocode:
 # Create a method that takes two arguments, one an array with the cohort, the other the preferred size of the groups
 # Shuffle the cohort array so that the output will always be random
@@ -56,19 +56,25 @@ def account_group(cohort, size) #accepts two arguments, an array and the preferr
 end
 
 account_group(cohort, 5)
-=======
-#  Pseudocode:
 
-# Create an array of all the people in the cohort
-# Take the length of the array and divide it by 5 to find out how many accountability groups there needs to be
-# Create a new array for how many groups there are going to be
-# for each array assign 5 people based on a randomized index from the array and remove them from the origial array
-# assign remaining people into last array
+__END__
 
-# create a hash with |accountability group number, array of people in it |
+What was the most interesting and most difficult part of this challenge?
 
+The most interesting part was making it dynamic. It was also the most difficult part. Finding a way so that you can input your own size of the accountability groups and not allowing groups to have less than three people made it challenging.
 
+Do you feel you are improving in your ability to write pseudocode and break the problem down?
 
-cohort = ["Joshua Abrams", "Syema Ailia", "Kris Bies", "Alexander Blair", "Andrew Blum", "Jacob Boer", "Alex Botsford", "Steven Broderick", "Ovi Calvo", "Danielle Cameron", "Celeste Carter", "Eran Chazan", "Jonathan Chen", "Un Choi", "Kevin Corso", "Eric Dell'Aringa", "Eunice Do", "Ronny Ewanek", "John Paul Chaufan Field", "Eric Freeburg", "Jeffrey George", "Jamar Gibbs", "Paul Gaston Gouron", "Gabrielle Gustilo", "Marie-France Han", "Noah Heinrich", "Jack Huang", "Max Iniguez", "Mark Janzer", "Michael Jasinski", "Lars Johnson", "Joshua Kim", "James Kirkpatrick", "Christopher Lee", "Isaac Lee", "Joseph Marion", "Kevin Mark", "Bernadette Masciocchi", "Bryan Munroe", "Becca Nelson", "Van Phan", "John Polhill", "Jeremy Powell", "Jessie Richardson", "David Roberts", "Armani Saldana", "Chris Savage", "Parminder Singh", "Kyle Smith", "Aaron Tsai", "Douglas Tsui", "Deanna Warren", "Peter Wiebe", "Daniel Woznicki", "Jay Yee", "Nicole Yee", "Bruno Zatta"]
+I feel like I am. I am also getting better at commenting on my code to help me keep track of it, especially if I want to read it later.
 
->>>>>>> master
+Was your approach for automating this task a good solution? What could have made it even better?
+
+I think that I did a good job automating this task. It is dynamic, reads well, and allows the user to easily change the size of the groups.
+
+What data structure did you decide to store the accountability groups in and why?
+
+I used a Hash, because it allowed me to check if there was a key => value that had less than three and modify it. I was able to access other indexes to add students to if needed.
+
+What did you learn in the process of refactoring your initial solution? Did you learn any new Ruby methods?
+
+I solidified my knowledge more in this one. I feel much more comfortable with hashes and manipulating them.
