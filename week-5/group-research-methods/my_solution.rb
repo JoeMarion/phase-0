@@ -5,7 +5,15 @@
 i_want_pets = ["I", "want", 3, "pets", "but", "only", "have", 2]
 my_family_pets_ages = {"Evi" => 6, "Ditto" => 3, "Hoobie" => 3, "George" => 12, "Bogart" => 4, "Poly" => 4, "Annabelle" => 0}
 
-# Person 1's solution
+# Person 1's solution - Jeremy Powell
+
+# input: array and letter/string argument
+# output:new array of words that contain letter
+# steps: check each word to see if it contains the 2nd param that we pass through the method (thing_to_find),
+# if the array value contains that letter then add/push to answer array, print answer array
+# I checked ruby docs and found method in array that looked like it would work (.include?).
+# I ran into an error because it does not work on fixnum values, so I added .to_s when iterating through each value in the array.
+
 def my_array_finding_method(source, thing_to_find)
   answer = Array.new
   source.each do |x|
@@ -15,6 +23,11 @@ def my_array_finding_method(source, thing_to_find)
   end
   p answer
 end
+
+# input: source hash and thing_to_find integer.
+# output: hash of keys matching the thing_to_find(integer)
+# steps: check each pair value for the number in thing_to_find, add key to answer hash if value matches, return keys only from answer hash.
+# I looped through all the value pairs and found the .store method on ruby docs as a simple way to keep the pair. I had to look back on ruby docs for the .keys method to only output the keys
 
 def my_hash_finding_method(source, thing_to_find)
   answer = Hash.new
@@ -26,7 +39,16 @@ def my_hash_finding_method(source, thing_to_find)
   p answer.keys
 end
 
-# Person 2
+# Person 2 - Gabrielle Gustillo
+
+# pseudocode:
+    # iterate through the array
+    # if array item is a number,
+        # add thing_to_modify to the number
+    # else, leave the item alone
+    # return the array(?)
+
+
 def my_array_modification_method!(source, thing_to_modify)
     source.collect! do |item|
         if item.is_a? Integer
@@ -37,6 +59,11 @@ def my_array_modification_method!(source, thing_to_modify)
     return source
 end
 
+# pseudocode:
+    # iterate through the hash
+    # add thing_to_modify to each hash value
+    # return the hash
+
 def my_hash_modification_method!(source, thing_to_modify)
       source.map do |k, v|
        source[k] = v += thing_to_modify
@@ -45,12 +72,23 @@ def my_hash_modification_method!(source, thing_to_modify)
 end
 
 # Identify and describe the Ruby method(s) you implemented.
+# I tried a bunch of different methods, but only some of them worked.  Take a look below.
+
+# Array methods:
+# each : Doesn't work, because it doesn't permanently alter the array - non-destructive
+# collect : Doesn't work, because it doesn't permanently alter the array - non-destructive
+# collect! : Works - destructively alters the array
+# map : Doesn't work, because it doesn't permanently alter the array - non-destructive
+# map! : Works - destructively alters the array
 #
-#
-#
+# Hash methods:
+# each : Works - destructively alters the array
+# each_value : Doesn't work, because it doesn't permanently alter the array - non-destructive
+# values : Doesn't work, because it doesn't permanently alter the array - non-destructive
+# map : Works - destructively alters the array
 
 
-# Person 3
+# Person 3 - Joseph Marion
 def my_array_sorting_method(source)
   source.sort_by {|value| value.to_s}
 end
