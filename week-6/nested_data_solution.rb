@@ -69,5 +69,13 @@ end
 __END__
 
 What are some general rules you can apply to nested arrays?
+
+Treat nested arrays similar to regular arrays as long as their positioning has been considered.
+
 What are some ways you can iterate over nested arrays?
+
+We used a .each loop with an if else checking if the object was an array or not. I think there was probably more efficient way to do this that I have to research a little more into so that I can make this a little more dynamic, but it worked for this challenge.
+
 Did you find any good new methods to implement or did you re-use one you were already familiar with? What was it and why did you decide that was a good option?
+
+We learned about .kind_of to test what value the object was.
