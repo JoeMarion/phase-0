@@ -80,3 +80,17 @@ end
 card = 4563960122001999
 new_class = CreditCard.new(card)
 new_class.check_card
+
+__END__
+
+What was the most difficult part of this challenge for you and your pair?
+
+Researching the methods to make our Pseudocode work. We used a different way than what was suggested which we feel was fairly easy to complete this assignment. It was a matter of using good Pseudocode and translating it this time.
+
+What new methods did you find to help you when you refactored?
+
+each_with_index was a new method for me and it proved very helpful in this exercise where we wanted to target only the even number indexes to double.
+
+What concepts or learnings were you able to solidify in this challenge?
+
+Working with arrays has definitely improved from this challenge. Using the .map and split/join methods better helped me understand what the array was doing and how to do it.
