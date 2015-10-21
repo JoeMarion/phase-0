@@ -53,9 +53,42 @@ end
 
 # Refactored Solution
 
+class GuessingGame
+  def initialize(answer)
+    @answer = answer
+  end
+
+  def guess(user_guess)
+    @last_guess = user_guess
+    if user_guess > @answer
+      return :high
+    elsif user_guess < @answer
+      return :low
+    else
+      return :correct
+    end
+  end
+
+  def solved?
+    @last_guess == @answer ? true : false
+  end
+
+  # Make sure you define the other required methods, too
+end
 
 
 
-
-
+__END__
 # Reflection
+
+When should you use instance variables? What do they do for you?
+
+Instance variables allow you to use them outside of the scope of a method. So within a class you can use an instance variable for the instance the class is initialized. This lets you use them in multiple methods accross the whole class.
+
+Explain how to use flow control. Did you have any trouble using it in this challenge? If so, what did you struggle with?
+
+Flow control helps give alternatives to the code. So that instead of following one path, it can evaluate actions and determine a more appropriate action to take place. Most commonly with the if else statement. If one this happens.. do this... else do this. It is a fork in the road that allows for variety.
+
+Why do you think this code requires you to return symbols? What are the benefits of using symbols?
+
+  I think that because symbols can return different values, we used symbols so that its not returning the value of low, high, etc, as a string. Instead it wants to print those, but return a value behind the scenes to help process it later.
