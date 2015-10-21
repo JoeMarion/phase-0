@@ -53,16 +53,33 @@ end
 
 # Refactored Solution
 
+class GuessingGame
+  def initialize(answer)
+    @answer = answer
+  end
 
+  def guess(user_guess)
+    @last_guess = user_guess
+    if user_guess > @answer
+      return :high
+    elsif user_guess < @answer
+      return :low
+    else
+      return :correct
+    end
+  end
+
+  def solved?
+    @last_guess == @answer ? true : false
+  end
+
+  # Make sure you define the other required methods, too
+end
 
 
 
 __END__
 # Reflection
-
-How do instance variables and methods represent the characteristics and behaviors (actions) of a real-world object?
-
-
 
 When should you use instance variables? What do they do for you?
 
