@@ -54,3 +54,25 @@ A one-to-many relationship involves two columns between two tables. It allows th
 ##What is a primary key? What is a foreign key? How can you determine which is which?
 
 A primary key is the first column of the main table in the database. This allows that column correspond with another column. A foreign key is a column of information that exists within both tables.
+
+![alt text](onetomany.png "One-to-Many, and Many-to-many")
+
+##What is a one-to-one database?
+
+They are databases that are used when they have a single relationship to one another. Something that typically is a pair.
+
+##When would you use a one-to-one database? (Think generally, not in terms of the example you created).
+
+They are created when their is a pair or is identicle to each other. Another reason I used it for was passwords that are stored in a secure database.
+
+##What is a many-to-many database?
+
+It is when both charts have multiples of the same items on their lists.
+
+##When would you use a many-to-many database? (Think generally, not in terms of the example you created).
+
+When you need to combine multiple columns to each other because there are many multiples of both columns in the db.
+
+##What is confusing about database schemas? What makes sense?
+
+I think that seeing and using them a little more will give me a better understand of how they work under the hood, but they were relatively intuitive so I don't think I have many questions just yet.
